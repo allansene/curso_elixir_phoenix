@@ -25,7 +25,15 @@ defmodule Cards do
   end
 
   def load(filename) do
-    {status, data} = File.read(filename)
-    :erlang.binary_to_term data
+    case File.read(filename) do
+      {:ok, binary} -> :erlang.binary_to_term binary
+      {:error, _} -> "something gone wrong..."
+    end
+  end
+
+  def create_hand(size) do
+    Cards.create_deck
+    |> Cards.shuffle
+    |> Cards.deal(size)
   end
 end
