@@ -1,4 +1,13 @@
 defmodule Cards do
+
+  @moduledoc """
+    Cria e manipula um deck de cartas de baralho
+  """
+  @doc """
+    Cria uma lista de strings que representam um deck de cartas 
+
+    
+  """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
