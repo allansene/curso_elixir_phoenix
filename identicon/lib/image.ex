@@ -1,3 +1,3 @@
-defmodule Identicon.Image
-  def struct hex: nil
+defmodule Identicon.Image do
+  defstruct [:hex, :color, :grid]
 end
