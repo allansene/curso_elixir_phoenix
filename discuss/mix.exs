@@ -32,7 +32,7 @@ defmodule Discuss.Mixfile do
   defp deps do
     [{:phoenix, ">= 0.0.0"},
      {:phoenix_pubsub, "~> 1.0"},
-     {:phoenix_ecto, "~> 2.0.3"},
+     {:phoenix_ecto, "~> 3.0.0"},
      {:mariaex, "~> 0.7.9"},
      {:phoenix_html, "~> 2.6.0", override: true},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
